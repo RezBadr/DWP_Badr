@@ -1,14 +1,19 @@
+<?php 
+session_start();
+session_destroy();
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="shortcut icon" type="x-icon" href="./src/assets/images/AdobeStock_427723549.jpeg"/>
-    <link href="./src/assets/Css/bootstrap.css" rel="stylesheet" />
-    <link href="./src/assets/Css/headers.css" rel="stylesheet" />
-    <link href="./src/assets/Css/heroes.css" rel="stylesheet" />
-    <link href="./src/assets/Css/features.css" rel="stylesheet" />
-    <script src="./src/assets/js/bootstrap.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="../assets/images/AdobeStock_427723549.jpeg"/>
+    <link href="../assets/Css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/Css/headers.css" rel="stylesheet" />
+    <link href="../assets/Css/heroes.css" rel="stylesheet" />
+    <link href="../assets/Css/features.css" rel="stylesheet" />
+    <link href="../assets/Css/product.css" rel="stylesheet" />
+    <script src="../assets/js/bootstrap.js"></script>
     <title>Garege Auto</title>
   </head>
   <body>
@@ -19,14 +24,14 @@
 
           <div class="col order-last" style="justify-items: center; margin: auto;">
            <div class="text-end">
-                <button type="button" class="btn btn-outline-light">Connexion</button>
-                <button type="button" class="btn btn-outline-warning">Creer un compte</button>
+              <a href="Sign-in.php">  <button type="button" class="btn btn-outline-light">Connexion</button></a>
+              <a href="Sign-up.php">  <button type="button" class="btn btn-outline-warning">Creer un compte</button></a>
               </div> 
              </div>
 
           <div class="col">
             <div class="text-center">
-            <a href="#"><img src="./src/assets/images/AdobeStock_427723549.jpeg" alt="logo" width="150px" height="100px"/></a>
+            <a href="#"><img src="../assets/images/AdobeStock_427723549.jpeg" alt="logo" width="150px" height="100px"/></a>
             </div>
           </div>
 
@@ -62,7 +67,7 @@
       <main>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background-image: url(./src/assets/images/bg3.jpg);background-repeat:no-repeat;background-size:cover;">
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="background-image: url(../assets/images/bg3.jpg);background-repeat:no-repeat;background-size:cover;">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
               <h1 class="display-4 fw-normal">Bienvenue chez garage Super Cars</h1>
               <p class="lead fw-normal">
@@ -77,7 +82,7 @@
                 <div class="feature col">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div > 
-                    <img  src="./src/assets/images/reparation-automobile (1).png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/reparation-automobile (1).png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div>
                     <h2>entretien</h2> 
@@ -87,7 +92,7 @@
                 <div class="feature col">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div> 
-                    <img  src="./src/assets/images/Mecanique.png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/Mecanique.png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div >
                     <h2>mecanique</h2> 
@@ -97,7 +102,7 @@
                 <div class="feature col" style="height: 250px;">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div > 
-                    <img  src="./src/assets/images/operateur.png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/operateur.png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div>
                     <h2>depannage</h2> 
@@ -111,7 +116,7 @@
                 <div class="feature col">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div > 
-                    <img  src="./src/assets/images/galce.png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/galce.png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div>
                     <h2>Vitrage</h2> 
@@ -121,7 +126,7 @@
                 <div class="feature col">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div> 
-                    <img  src="./src/assets/images/carrosserie.png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/carrosserie.png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div >
                     <h2>carrosserie</h2> 
@@ -131,7 +136,7 @@
                 <div class="feature col" style="height: 250px;">
                   <a href="#" class="icon-link" style="background-color: #ffffff;height: 100%;color: black; width: 100%;display: flex;flex-direction: column; justify-content: space-around;">
                   <div > 
-                    <img  src="./src/assets/images/pneus.png" alt="battrie" width=50px height="50px" >                    
+                    <img  src="../assets/images/pneus.png" alt="battrie" width=50px height="50px" >                    
                   </div>
                   <div>
                     <h2>pneus</h2> 
@@ -348,49 +353,49 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckFreinage" >
                             <label class="form-check-label" for="flexCheckFreinage">
-                              <img src="./src/assets/images/disc-brake.png" alt="d">
+                              <img src="../assets/images/disc-brake.png" alt="d">
                               Freinage
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckBatterie" >
                             <label class="form-check-label" for="flexCheckBatterie">
-                              <img src="./src/assets/images/8541729_car_battery_icon.png" alt="b" width="32px" height="32px">
+                              <img src="../assets/images/8541729_car_battery_icon.png" alt="b" width="32px" height="32px">
                               Batterie
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckEchappement" >
                             <label class="form-check-label" for="flexCheckEchappement">
-                              <img src="./src/assets/images/tuyau-dechappement.png" alt="de">
+                              <img src="../assets/images/tuyau-dechappement.png" alt="de">
                               Echappement
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckAmortisseur" >
                             <label class="form-check-label" for="flexCheckAmortisseur">
-                              <img src="./src/assets/images/amortisseur.png" alt="">
+                              <img src="../assets/images/amortisseur.png" alt="">
                               Amortisseur
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckControleTechnique" >
                             <label class="form-check-label" for="flexCheckControleTechnique">
-                              <img src="./src/assets/images/chercher.png" alt="">
+                              <img src="../assets/images/chercher.png" alt="">
                               Controle Thechnique
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckVidange_revision" >
                             <label class="form-check-label" for="flexCheckVidange_revision">
-                              <img src="./src/assets/images/petrole.png" alt="">
+                              <img src="../assets/images/petrole.png" alt="">
                               Vidange-revision
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckClimatisation" >
                             <label class="form-check-label" for="flexCheckClimatisation">
-                              <img src="./src/assets/images/climatisation.png" alt="">
+                              <img src="../assets/images/climatisation.png" alt="">
                               Climatisation
                             </label>
                           </div>
@@ -408,7 +413,7 @@
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckMecanique_diagnostique" checked>
                           <label class="form-check-label" for="flexCheckMecanique_diagnostique">
-                            <img src="./src/assets/images/Mecanique.png" alt="" width="32px" height="32px">
+                            <img src="../assets/images/Mecanique.png" alt="" width="32px" height="32px">
                             Mecanique / diagnostique
                           </label>
                         </div>
@@ -426,7 +431,7 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckVitrage" checked>
                             <label class="form-check-label" for="flexCheckVitrage">
-                              <img src="./src/assets/images/galce.png" alt="" width="32px" height="32px">
+                              <img src="../assets/images/galce.png" alt="" width="32px" height="32px">
                               Vitrage
                             </label>
                           </div>
@@ -444,7 +449,7 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckCarrosserie" checked>
                             <label class="form-check-label" for="flexCheckCarrosserie">
-                              <img src="./src/assets/images/carrosserie.png" alt="" width="32px" height="32px">
+                              <img src="../assets/images/carrosserie.png" alt="" width="32px" height="32px">
                               Carrosserie
                             </label>
                           </div>
@@ -462,28 +467,28 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckPneusHiver" >
                             <label class="form-check-label" for="flexCheckPneusHiver">
-                              <img src="./src/assets/images/tire (1).png" alt="">
+                              <img src="../assets/images/tire (1).png" alt="">
                               Pneus hiver
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckRoues_PneusHiver" >
                             <label class="form-check-label" for="flexCheckRoues_PneusHiver">
-                              <img src="./src/assets/images/wheel.png" alt="">
+                              <img src="../assets/images/wheel.png" alt="">
                               Roues + PneusHiver
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckPneusEte" >
                             <label class="form-check-label" for="flexCheckPneusEte">
-                              <img src="./src/assets/images/tire.png" alt="">
+                              <img src="../assets/images/tire.png" alt="">
                               Pneus ete
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckRoues_PneusEte" >
                             <label class="form-check-label" for="flexCheckRoues_PneusEte">
-                              <img src="./src/assets/images/wheel.png" alt="">
+                              <img src="../assets/images/wheel.png" alt="">
                               Roues + Pneus ete
                             </label>
                           </div>
@@ -628,34 +633,15 @@
             </div>
           </div>
           <div class="tab-pane fade" id="pills-Employe" role="tabpanel" aria-labelledby="pills-Employe-tab">
-            <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-              <div class="row align-items-center g-lg-5 py-5">
-                <div class="col-lg-7 text-center text-lg-start">
-                  <h1 class="display-4 fw-bold lh-1 mb-3">ESPACE DES EMPLOYES</h1>
-                  <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-                </div>
-                <div class="col-md-10 mx-auto col-lg-5">
-                  <form class="p-4 p-md-5 border rounded-3 bg-light">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Password</label>
-                    </div>
-                    <div class="checkbox mb-3">
-                      <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                      </label>
-                    </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">se connecter</button>
-                    <hr class="my-4">
-                    <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                  </form>
-                </div>
-              </div>
-            </div>
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">ESPACE-EMPLOYES</h1>
+      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+      <a class="btn btn-outline-secondary" href="../pages/login_emp.php">ACCES A ESPACE-EMPLOYES</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
         </div>
       </main>
     <footer>
